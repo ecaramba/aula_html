@@ -1,0 +1,16 @@
+div {
+    color: crimson;
+}
+
+.outro {
+    color: blue;
+    background-color: lightblue;
+}
+
+div.uma {
+    border: 1px solid black;
+}
+
+#texto {
+    font-size: 20pt;
+}
