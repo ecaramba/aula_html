@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Grid</title>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+
+        <style>
+            div {
+               /* border: 1px solid blue; */
+            }
+            .topo {
+                font-size: 20pt;
+                background-color: #1faa49;
+            }
+            .topo:hover {
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <!-- topo -->
+            <div class="row">
+                <div class="col topo">topo</div>
+            </div>
+
+            <!-- conteudo -->
+            <div class="row">
+                <div class="col-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">Home</li>
+                        <li class="list-group-item">Cadastro</li>
+                        <li class="list-group-item active">Relatorios</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+
+                    <div class="card">
+                        <div class="card-header">
+                            Relatorios do mes
+                        </div>
+
+                        <div class="card-body">
+                            
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Cidade</th>
+                                    <th>Valor</th>
+                                </tr>
+                                <tr>
+                                    <td>Caneta BIC</td>
+                                    <td>Curitiba</td>
+                                    <td>R$ 2.900</td>
+                                </tr>
+                                <tr>
+                                    <td>Papel</td>
+                                    <td>Colombo</td>
+                                    <td>R$ 3.789</td>
+                                </tr>
+                                <tr>
+                                    <td>Caneta</td>
+                                    <td>Pinhais</td>
+                                    <td>R$ 123,40</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- rodape -->
+            <div class="row">
+                <div class="col-8">rodape</div>
+            </div>
+        </div>
+    </body>
+</html>
