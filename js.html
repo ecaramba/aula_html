@@ -12,13 +12,18 @@
             var andando = false; // bool
 
 
-            
-
             function exibir() 
             {
                 var pessoa = prompt("Qual é o seu nome?");
                 
                 console.log("Olá " + pessoa)
+            }
+
+            function maiuscula()
+            {
+                var pessoa = prompt("Qual é o seu nome?");
+                var novo = pessoa.toUpperCase();
+                console.log(novo);
             }
 
         </script>
@@ -30,6 +35,9 @@
         <h1>Aula de JS</h1>
 
         <button onclick="exibir()">Exibir</button>
+
+        <button onclick="maiuscula()">Letra Maiuscula</button>
+
 
     </body>
 </html>
