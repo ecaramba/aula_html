@@ -26,6 +26,26 @@
                 console.log(novo);
             }
 
+            function email()
+            {
+                var email = prompt("Digite seu email");
+                var dados = email.split("@")
+                var usuario = dados[0];
+                var servidor = dados[1];
+                console.log("usuario: "+ usuario);
+                console.log("servidor: " + servidor);
+            }
+
+            function somar()
+            {
+                var n1 = prompt("digite o num 1");
+                var n2 = prompt("digite o num 2");
+                
+                var resultado = parseInt(n1) + parseInt(n2)
+
+                console.log(resultado);
+            }
+
         </script>
 
     </head>
@@ -38,6 +58,12 @@
 
         <button onclick="maiuscula()">Letra Maiuscula</button>
 
+        <button onclick="email()">Email</button>
+
+        <button onclick="somar()">somar</button>
+        <button>sub</button>
+        <button>mult</button>
+        <button>div</button>
 
     </body>
 </html>
