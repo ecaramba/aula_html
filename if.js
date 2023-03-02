@@ -34,14 +34,30 @@ function idade()
 
 function maior()
 {
+    /*
+        10
+        2
+        30
+    */
     var n1 = prompt("digite o n1");
     var n2 = prompt("digite o n2");
     var n3 = prompt("digite o n3");
 
     if (n1 > n2)
     {
-        console.log("O maior é " + n1)
+        if (n1 > n3) 
+        {
+            console.log("O maior é " + n1)
+        } else {
+            console.log("O maior é " + n3)
+        }
+
     } else {
-        console.log("O maior é " + n2)
+        if(n2 > n3)
+        {
+            console.log("O maior é " + n2)
+        } else {
+            console.log("O maior é " + n3)
+        }
     }
 }
