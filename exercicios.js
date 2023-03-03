@@ -4,8 +4,7 @@ var cidades = ["Curitiba", "Pinhais", "Araucaria", "Colombo"];
 
 function imprimir()
 {
-
-    
+    var div = document.getElementById("resposta");    
     console.log(div);
 
     // limpa o div
@@ -21,16 +20,14 @@ function imprimir()
         ini += 1;
         // ini = ini + 1;
     }
-
-
 }
 
 function ordenado()
 {
     var div = document.getElementById("resposta");
     div.innerHTML = "";
-
     
+    cidades.sort();
     var fim = cidades.length;
 
     for (var ini = 0; ini < fim; ini += 1)
