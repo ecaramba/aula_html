@@ -2,8 +2,8 @@
 var aluno1 = "Ana";
 var aluno2 = "Pedro";
 
-// array
-var cidades = ["Curitiba", "Pinhais", "Colombo"]
+// array - criar
+let cidades = ["Curitiba", "Pinhais", "Colombo"]
 
 // add cidade
 cidades.push("Araucaria")
