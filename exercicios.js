@@ -36,3 +36,16 @@ function ordenado()
     }
 
 }
+
+function add()
+{
+    var nova = prompt("Digite a cidade");
+
+    if (nova != "")
+    {
+        cidades.push(nova);
+    }
+
+    imprimir();
+
+}
