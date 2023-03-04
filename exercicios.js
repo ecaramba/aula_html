@@ -43,7 +43,10 @@ function add()
 
     if (nova != "")
     {
-        cidades.push(nova);
+        if (cidades.includes(nova) == false)
+        {
+            cidades.push(nova);
+        }
     }
 
     imprimir();
