@@ -26,7 +26,17 @@ function exe2()
     var resultado = document.getElementById("resultado");
     var texto = document.getElementById("texto");
 
-    // var novo = 
+    var fim = 0;
+    var ini = texto.value.length; // 4
+    // novo -> ovon
+    // 0123 -> 3210
+
+    while(ini >= fim)
+    {
+        resultado.innerHTML += texto.value.charAt(ini)
+        ini -= 1; 
+    }
+    
 }
 
 // oculta o cpf
