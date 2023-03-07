@@ -53,3 +53,22 @@ function exe3()
 
     resultado.innerHTML = primeiros + ".***.***-" + ultimos;
 }
+
+// transforma texto em url
+// Fui passear em Curitiba
+// fui_passear_em_curitiba
+function exe4()
+{
+    var resultado = document.getElementById("resultado");
+    var texto = document.getElementById("texto");
+
+    var novo = texto.value.toLowerCase();
+
+    var palavra = novo.split(" ");
+    console.log(palavra);
+    resultado.innerHTML = palavra.join("_")
+
+    //resultado.innerHTML = novo.replace(/ /g, "_");
+
+
+}
