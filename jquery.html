@@ -16,24 +16,43 @@
             margin: 4px;
             display: inline;
         }
+
+        #titulo {
+            color: red;
+        }
+
     </style>
 
     <script>
         function esconder()
         {
-            
+            // seleciona o id
+            var titulo = $("#titulo");
+            console.log(titulo);
+
+            titulo.slideToggle();
+        }
+
+        function cor()
+        {
+            var cor = $("#cor").val()
+            console.log(cor)
+
+            $("div").css("background-color", cor);
         }
     </script>
 
 </head>
 <body>
 
-    <h1>Jquery</h1>
+    <h1 id="titulo">Jquery</h1>
 
     <div onclick="esconder()">click</div>
+    <div onclick="cor()">click</div>
     <div>click</div>
     <div>click</div>
-    <div>click</div>
+
+    <input id="cor" type="color" />
 
 </body>
 </html>
