@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="jquery-3.6.3.js"></script>
+    <script>
+
+        // executa quando o DOM foi carregado
+        // forma resumida
+        // $(function()
+        $(document).ready(function ()
+        {
+            $("h1").css("color", "coral")
+        });
+
+        // forma resumida
+        $(document).ready(function ()
+        {
+            $("h1").click(function ()
+            {
+                $("h1").css("color", "red");
+            });
+
+            $("div").hover(function()
+            {
+                // this é o elemento que disparou o evento
+                console.log(this);
+
+                $(this).css("background-color", "aqua");
+                $(this).css("color", "blue");
+            });
+
+            // Cadastra a cidade
+            $("#btn-cadastrar").click(function ()
+            {
+                var cidade = $("#cidade").val();
+
+                console.log(cidade);
+
+                $("#todas-cidades").prepend("<li>"+cidade+"</li>");
+
+            });
+        });
+
+    </script>
+
+    <style>
+        div {
+            background-color: coral;
+            border: 1px solid black;
+            padding: 4px;
+            display: inline;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <h1>Exercicios com Jquery</h1>
+
+    <div>item 1</div>
+    <div>item 2</div>
+    <div>item 3</div>
+    <div>item 4</div>
+
+
+    <h2>Cidades</h2>
+
+    <input type="text" id="cidade" />
+    <button id="btn-cadastrar">Cadastrar</button>
+
+    <ul id="todas-cidades">
+        <li>Curitiba</li>
+        <li>Pinhais</li>
+        <li>Colombo</li>
+        <li>Ponta Grossa</li>
+    </ul>
+    
+</body>
+</html>
