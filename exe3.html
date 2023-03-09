@@ -40,9 +40,17 @@
 
                 console.log(cidade);
 
-                $("#todas-cidades").prepend("<li>"+cidade+"</li>");
+                $("#todas-cidades").after("<li>"+cidade+"</li>");
 
             });
+
+            // deleta uma cidade
+            $(".delete").click(function()
+            {
+                console.log($(this).parent());
+
+                $(this).parent().remove();
+            })
         });
 
     </script>
@@ -54,6 +62,12 @@
             padding: 4px;
             display: inline;
         }
+
+        .delete {
+            color: crimson;
+            cursor: pointer;
+        }
+
     </style>
 
 
@@ -74,10 +88,10 @@
     <button id="btn-cadastrar">Cadastrar</button>
 
     <ul id="todas-cidades">
-        <li>Curitiba</li>
-        <li>Pinhais</li>
-        <li>Colombo</li>
-        <li>Ponta Grossa</li>
+        <li>Curitiba <span class="delete">[X]</span></li>
+        <li>Pinhais <span class="delete">[X]</span></li>
+        <li>Colombo <span class="delete">[X]</span></li>
+        <li>Ponta Grossa <span class="delete">[X]</span></li>
     </ul>
     
 </body>
