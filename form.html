@@ -28,39 +28,56 @@
             <div class="col-8 offset-2">
 
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body row">
 
-                        <div>
+                        <div class="col-12">
                             <label class="form-label">Nome</label>
                             <input type="text" class="form-control" />
                         </div>
 
-                        <div>
+                        <div class="col-12">
                             <label class="form-label">Email</label>
                             <input type="text" class="form-control" />
                         </div>
 
-                        <div>
+                        <div class="col-6">
                             <label class="form-label">Telefone</label>
                             <input type="text" class="form-control" />
                         </div>
 
-                        <div>
+                        <div class="col-6">
                             <label class="form-label">CPF</label>
                             <input type="text" class="form-control" />
                         </div>
 
                         <div>
                             <label class="form-label">Cidade</label>
-                            <input type="text" class="form-control" />
+                            
+                            <select class="form-select">
+                                <option> -- Selecione --</option>
+                                <option>Curitiba</option>
+                                <option>Pinhais</option>
+                                <option>Colombo</option>
+                                <option>Araucaria</option>
+                            </select>
+
                         </div>
 
-                        <div>
+                        <div class="col-6">
                             <label class="form-label">Sexo</label>
-                            <input type="text" class="form-control" />
+                            
+                            <div class="form-check">
+                                <input name="sexo" value="M" type="radio" class="form-check-input" />
+                                <label  class="form-check-label">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input name="sexo" value="F" type="radio" class="form-check-input" />
+                                <label class="form-check-label">Feminino</label>
+                            </div>
+
                         </div>
 
-                        <div>
+                        <div class="col-6">
                             <label class="form-label">Data de Nascimento</label>
                             <input type="text" class="form-control" />
                         </div>
