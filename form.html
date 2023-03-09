@@ -32,25 +32,29 @@
 
                         <div class="col-12">
                             <label class="form-label">Nome</label>
-                            <input type="text" class="form-control" />
+                            <input type="text" class="form-control is-invalid" />
+                            <div class="invalid-feedback">O nome é obrigatório</div>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col-12 mt-3">
                             <label class="form-label">Email</label>
                             <input type="text" class="form-control" />
+                            <div class="invalid-feedback">O email é obrigatório</div>
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-6 mt-3">
                             <label class="form-label">Telefone</label>
                             <input type="text" class="form-control" />
+                            <div class="invalid-feedback">O telefone é obrigatório</div>
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-6 mt-3">
                             <label class="form-label">CPF</label>
                             <input type="text" class="form-control" />
+                            <div class="invalid-feedback">O CPF é obrigatório</div>
                         </div>
 
-                        <div>
+                        <div class="col-12 mt-3">
                             <label class="form-label">Cidade</label>
                             
                             <select class="form-select">
@@ -61,9 +65,11 @@
                                 <option>Araucaria</option>
                             </select>
 
+                            <div class="invalid-feedback">A cidade é obrigatório</div>
+
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-6 mt-3">
                             <label class="form-label">Sexo</label>
                             
                             <div class="form-check">
@@ -75,11 +81,18 @@
                                 <label class="form-check-label">Feminino</label>
                             </div>
 
+                            <div class="invalid-feedback">O sexo é obrigatório</div>
+
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-6 mt-3">
                             <label class="form-label">Data de Nascimento</label>
                             <input type="text" class="form-control" />
+                            <div class="invalid-feedback">A data de nascimento é obrigatório</div>
+                        </div>
+
+                        <div class="mt-5">
+                            <button class="btn btn-primary float-end">Cadastrar</button>
                         </div>
 
                     </div>  
