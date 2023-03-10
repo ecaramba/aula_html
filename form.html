@@ -7,6 +7,9 @@
     <title>Cadastro de Cliente</title>
 
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <script src="form.js"></script>
 
     <style>
         div {
@@ -38,7 +41,7 @@
 
                         <div class="col-12 mt-3">
                             <label class="form-label">Email</label>
-                            <input type="text" class="form-control" />
+                            <input id="email" type="text" class="form-control" />
                             <div class="invalid-feedback">O email é obrigatório</div>
                         </div>
 
@@ -92,7 +95,7 @@
                         </div>
 
                         <div class="mt-5">
-                            <button class="btn btn-primary float-end">Cadastrar</button>
+                            <button id="btn-cadastrar" class="btn btn-primary float-end">Cadastrar</button>
                         </div>
 
                     </div>  
