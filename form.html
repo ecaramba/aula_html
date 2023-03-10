@@ -35,7 +35,7 @@
 
                         <div class="col-12">
                             <label class="form-label">Nome</label>
-                            <input type="text" class="form-control is-invalid" />
+                            <input id="nome" type="text" class="form-control" />
                             <div class="invalid-feedback">O nome é obrigatório</div>
                         </div>
 
@@ -47,25 +47,25 @@
 
                         <div class="col-6 mt-3">
                             <label class="form-label">Telefone</label>
-                            <input type="text" class="form-control" />
+                            <input id="telefone" type="text" class="form-control" />
                             <div class="invalid-feedback">O telefone é obrigatório</div>
                         </div>
 
                         <div class="col-6 mt-3">
                             <label class="form-label">CPF</label>
-                            <input type="text" class="form-control" />
+                            <input id="cpf" type="text" class="form-control" />
                             <div class="invalid-feedback">O CPF é obrigatório</div>
                         </div>
 
                         <div class="col-12 mt-3">
                             <label class="form-label">Cidade</label>
                             
-                            <select class="form-select">
-                                <option> -- Selecione --</option>
-                                <option>Curitiba</option>
-                                <option>Pinhais</option>
-                                <option>Colombo</option>
-                                <option>Araucaria</option>
+                            <select id="cidade" class="form-select">
+                                <option value="0"> -- Selecione --</option>
+                                <option value="10">Curitiba</option>
+                                <option value="11">Pinhais</option>
+                                <option value="12">Colombo</option>
+                                <option value="13">Araucaria</option>
                             </select>
 
                             <div class="invalid-feedback">A cidade é obrigatório</div>
@@ -76,21 +76,21 @@
                             <label class="form-label">Sexo</label>
                             
                             <div class="form-check">
-                                <input name="sexo" value="M" type="radio" class="form-check-input" />
+                                <input  name="sexo" value="M" type="radio" class="form-check-input" />
                                 <label  class="form-check-label">Masculino</label>
                             </div>
                             <div class="form-check">
-                                <input name="sexo" value="F" type="radio" class="form-check-input" />
+                                <input  name="sexo" value="F" type="radio" class="form-check-input" />
                                 <label class="form-check-label">Feminino</label>
+                                <div class="invalid-feedback">O sexo é obrigatório</div>
                             </div>
 
-                            <div class="invalid-feedback">O sexo é obrigatório</div>
 
                         </div>
 
                         <div class="col-6 mt-3">
                             <label class="form-label">Data de Nascimento</label>
-                            <input type="text" class="form-control" />
+                            <input id="data" type="text" class="form-control" />
                             <div class="invalid-feedback">A data de nascimento é obrigatório</div>
                         </div>
 
